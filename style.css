@@ -1,0 +1,123 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.banner-section {
+    height: auto;
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    background: -webkit-linear-gradient(110deg, #ffffff 50%, #4b98f1 50%);
+}
+
+.banner-section > .wrapper > img {
+    -webkit-box-shadow: 22px 21px 13px -25px rgba(0,0,0,1);
+    -moz-box-shadow: 22px 21px 13px -25px rgba(0,0,0,1);
+    box-shadow: 25px 25px 15px -25px rgba(0,0,0,1);
+    height: auto;
+    width: 90%;
+    margin: 5% 5% 0 5%;
+}
+
+.wrapper > h1 {
+    position: relative;
+    top: -120px;
+    left: 50px;
+    width: 80%;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
+    overflow-wrap: anywhere;
+}
+
+.about-me {
+    background-color: white;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.links > img {
+    height: auto;
+    width: 10%;
+}
+
+.screenshot {
+    background-color: rgb(115, 115, 226);
+    width: 100%;
+    height: 300px;
+}
+
+.project {
+    width: 90%;
+    margin: 5%;
+    text-align: center;
+    -webkit-box-shadow: 0px 20px 99px -27px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 20px 99px -27px rgba(0,0,0,1);
+    box-shadow: 0px 20px 99px -27px rgba(0,0,0,1);
+}
+
+.description {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icons > img {
+    width: 20px;
+    height: auto;
+}
+
+.my-work {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 3rem 0;
+}
+
+.contact {
+    width: 100%;
+    color: white;
+    background-color: #4b98f1;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact > img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
