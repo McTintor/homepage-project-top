@@ -1,6 +1,8 @@
 html, body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
 }
 
 .banner-section {
@@ -30,7 +32,6 @@ html, body {
     color: white;
     text-shadow: 1px 1px 2px black;
     font-size: 40px;
-    overflow-wrap: anywhere;
 }
 
 .about-me {
@@ -120,4 +121,75 @@ html, body {
     justify-content: center;
     gap: 1rem;
     margin: 1rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .banner-section > .wrapper > img {
+        height: auto;
+        width: 50%;
+        z-index: 1;
+        margin: 0;
+        float: left;
+    }
+    .wrapper {
+        width: 90%;
+        overflow: hidden;
+        padding: 5%;
+    }
+    .wrapper > h1 {
+        height: 1rem;
+        position: relative;
+        top: -5em;
+        left: 8em;
+        width: 45%;
+        font-size: 50px;
+        height: auto;
+    }
+    .about-me {
+        margin-top: -20em;
+        margin-left: 10em;
+        width: 60%;
+        height: 50%;
+        line-height: 1.5rem;
+        padding: 1rem;
+        box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.219);
+        z-index: 0;
+        padding-left: 5rem;
+        border: 0.5px solid rgba(128, 128, 128, 0.185);
+    }
+    .banner-section .links {
+        display: none;
+    }
+    .my-work {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        gap: 0;
+
+    }
+    .project {
+        width: 40%;     
+    }
+    .contact {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-wrapper {
+        width: 40%;
+        gap: 0;
+    }
+    .contact > img {
+        width: 30%;
+        height: auto;
+    }
+}
+@media only screen and (min-width: 1025px) {
+    
 }
