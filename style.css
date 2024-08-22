@@ -5,6 +5,11 @@ html, body {
     min-height: 100vh;
 }
 
+section {
+    width: 100%;
+    margin: 0;
+}
+
 .banner-section {
     height: auto;
     width: 100%;
@@ -15,7 +20,7 @@ html, body {
     background: -webkit-linear-gradient(110deg, #ffffff 50%, #4b98f1 50%);
 }
 
-.banner-section > .wrapper > img {
+.hero-image img {
     -webkit-box-shadow: 22px 21px 13px -25px rgba(0,0,0,1);
     -moz-box-shadow: 22px 21px 13px -25px rgba(0,0,0,1);
     box-shadow: 25px 25px 15px -25px rgba(0,0,0,1);
@@ -24,7 +29,7 @@ html, body {
     margin: 5% 5% 0 5%;
 }
 
-.wrapper > h1 {
+.hero-image > h1 {
     position: relative;
     top: -120px;
     left: 50px;
@@ -86,13 +91,24 @@ html, body {
 }
 
 .my-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.my-work > h2 {
+    margin: 0;
+}
+
+.work-wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin: 3rem 0;
+    margin: 1rem 0;
 }
 
 .contact {
@@ -124,7 +140,7 @@ html, body {
 }
 
 @media only screen and (min-width: 768px) {
-    .banner-section > .wrapper > img {
+    .hero-image > img{
         height: auto;
         width: 50%;
         z-index: 1;
@@ -136,7 +152,7 @@ html, body {
         overflow: hidden;
         padding: 5%;
     }
-    .wrapper > h1 {
+    .hero-image > h1 {
         height: 1rem;
         position: relative;
         top: -5em;
@@ -160,7 +176,7 @@ html, body {
     .banner-section .links {
         display: none;
     }
-    .my-work {
+    .work-wrapper {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
@@ -189,7 +205,102 @@ html, body {
         width: 30%;
         height: auto;
     }
+    .my-work {
+        align-items: normal;
+    }
+    .my-work > h2{
+        margin-left: 5%;
+    }
 }
 @media only screen and (min-width: 1025px) {
-    
+    .work-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        gap: 0;
+        width: 100%;
+
+    }
+    .project {
+        width: 30%;   
+        margin: 5% 0;  
+    }
+    .contact {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-wrapper {
+        width: 40%;
+        gap: 0;
+    }
+    .contact > img {
+        width: 40%;
+        height: auto;
+        margin: 2rem 0;
+    }
+    .contact-wrapper > .links > img {
+        width: 8%;
+    }
+    .my-work > h2{
+        margin-left: 2.5%;
+    }
+    .banner-section .links {
+        display: block;
+        width: 60%;
+        height: auto;
+        float: right;
+    }
+    .hero-image {
+        width: 50%;
+    }
+    .hero-image img {
+        height: auto;
+        width: 100%;
+        margin: 0;
+        z-index: 0;
+    }
+    .wrapper {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner-section {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .hero-image > h1 {
+        font-size: 4rem;
+        float: left;
+        top: 0;
+        left: 0;
+        margin: -3em 0 0 0;
+        width: 100%;
+        text-align: center;
+    }
+    .about-me {
+        margin:0;
+        width: 40%;
+        height: 65%;
+        line-height: 2rem;
+        box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.219);
+        z-index: 0;
+        padding: 0.5rem 0 0 0;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
